@@ -14,7 +14,9 @@ public class Main {
             string = inputDo;
             String[] arr = inputDo.split("");
             String result = String.join(",", arr);
-            System.out.println(result);
+            if (!result.equals(":,q")) {
+                System.out.println(result);
+            }
         } while (!string.equals(":q"));
     }
 
